@@ -47,11 +47,15 @@ export default (configContext) => {
         </Field>
       </Field>
 
-      <InputTable name="nagpraReportFiled">
-        <Field name="nagpraReportFiled" subpath="ns2:collectionobjects_nagpra" />
-        <Field name="nagpraReportFiledBy" subpath="ns2:collectionobjects_nagpra" />
-        <Field name="nagpraReportFiledDate" subpath="ns2:collectionobjects_nagpra" />
-      </InputTable>
+        <Field name="nagpraReportFiledGroupList">
+          <Field name="nagpraReportFiledGroup">
+            <Field name="nagpraReportFiled" subpath="ns2:collectionobjects_nagpra" />
+            <Field name="nagpraReportFiledBy" subpath="ns2:collectionobjects_nagpra" />
+            <Field name="nagpraReportFiledWith" subpath="ns2:collectionobjects_nagpra" />
+            <Field name="nagpraReportFiledDate" subpath="ns2:collectionobjects_nagpra" />
+            <Field name="nagpraReportFiledNote" subpath="ns2:collectionobjects_nagpra" />
+          </Field>
+        </Field>
     </Panel>
   );
 };
